@@ -48,7 +48,7 @@ async function Home() {
         <h2>Your Interviews</h2>
 
         <div className="interviews-section">
-          {hasUpcomingInterviews ? (
+          {hasPastInterviews ? (
             userInterviews?.map((interview) => (
               <InterviewCard
                 key={interview.id}
@@ -70,7 +70,7 @@ async function Home() {
         <h2>Take Interviews</h2>
 
         <div className="interviews-section">
-          {hasPastInterviews ? (
+          {hasUpcomingInterviews ? (
             allInterview?.map((interview) => (
               <InterviewCard
                 key={interview.id}
